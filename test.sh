@@ -31,6 +31,7 @@ stdbuf -oL python $script_path/run_classifier.py  \
     --train_batch_size=4 \
     --learning_rate=2e-5 \
     --num_train_epochs=3.0 \
+    --iterations_per_loop=20 \
     --output_dir=mrpc_output/ | tee $script_path/output_batchsize-4_umem-$UNIFIED_MEMORY_SET.txt
 
 rm -rf mrpc_output 2>/dev/zero
@@ -47,6 +48,7 @@ stdbuf -oL python $script_path/run_classifier.py  \
     --train_batch_size=8 \
     --learning_rate=2e-5 \
     --num_train_epochs=3.0 \
+    --iterations_per_loop=20 \
     --output_dir=mrpc_output/ | tee $script_path/output_batchsize-8_umem-$UNIFIED_MEMORY_SET.txt
 
 rm -rf mrpc_output 2>/dev/zero
@@ -63,5 +65,6 @@ stdbuf -oL python $script_path/run_classifier.py  \
     --train_batch_size=32 \
     --learning_rate=2e-5 \
     --num_train_epochs=3.0 \
+    --iterations_per_loop=20 \
     --output_dir=mrpc_output/ | tee $script_path/output_batchsize-32_umem-$UNIFIED_MEMORY_SET.txt
 
