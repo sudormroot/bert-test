@@ -52,7 +52,7 @@ class MyMetadataHook(tf.estimator.SessionRunHook):
     def __init__(self, save_steps=None, save_secs=None, output_dir=""):
         self._output_tag = "blah-{}"
         self._output_dir = output_dir
-        #self._timer = SecondOrStepTimer(every_secs=save_secs, every_steps=save_steps)
+        self._timer = tf.estimator.SecondOrStepTimer(every_secs=save_secs, every_steps=save_steps)
         self._atomic_counter = 0
  
         #self.run_options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
@@ -78,7 +78,7 @@ class MyMetadataHook(tf.estimator.SessionRunHook):
         #                               self._next_step))
         requests = {}#{"global_step": self._global_step_tensor}
         opts = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
-        return SessionRunArgs(requests, options=opts, run_metadata=self.run_metadata)
+        return tf.estimator.SessionRunArgs(requests, options=opts, run_metadata=self.run_metadata)
  
     def after_run(self, run_context, run_values):
 
