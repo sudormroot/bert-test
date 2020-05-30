@@ -923,7 +923,8 @@ def main(_):
     
     hooks = [hook]
 
-    
+    num_train_steps=20
+
     estimator.train(input_fn=train_input_fn, max_steps=num_train_steps, hooks=hooks)
 
   if FLAGS.do_eval:
