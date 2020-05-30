@@ -844,7 +844,13 @@ def main(_):
         FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
   is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
+
+  # add by jiaolin  
+  session_config = tf.ConfigProto(gpu_options=gpu_options)
+  #estimator_config = tf.estimator.RunConfig(session_config=session_config)
+
   run_config = tf.contrib.tpu.RunConfig(
+    session_config=session_config, #add by jiaolin
       cluster=tpu_cluster_resolver,
       master=FLAGS.master,
       model_dir=FLAGS.output_dir,
@@ -853,6 +859,8 @@ def main(_):
           iterations_per_loop=FLAGS.iterations_per_loop,
           num_shards=FLAGS.num_tpu_cores,
           per_host_input_for_training=is_per_host))
+
+
 
   train_examples = None
   num_train_steps = None
@@ -876,9 +884,6 @@ def main(_):
   # If TPU is not available, this will fall back to normal Estimator on CPU
   # or GPU.
 
-  # add by jiaolin  
-  session_config = tf.ConfigProto(gpu_options=gpu_options)
-  estimator_config = tf.estimator.RunConfig(session_config=session_config)
 
   estimator = tf.contrib.tpu.TPUEstimator(
       use_tpu=FLAGS.use_tpu,
@@ -886,7 +891,7 @@ def main(_):
       config=run_config,
       train_batch_size=FLAGS.train_batch_size,
       eval_batch_size=FLAGS.eval_batch_size,
-      predict_batch_size=FLAGS.predict_batch_size, config=estimator_config) # add by jiaolin
+      predict_batch_size=FLAGS.predict_batch_size)
 
   if FLAGS.do_train:
     train_file = os.path.join(FLAGS.output_dir, "train.tf_record")
