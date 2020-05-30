@@ -30,6 +30,25 @@ flags = tf.flags
 
 FLAGS = flags.FLAGS
 
+
+
+UNIFIED_MEMORY_SET="no"
+
+env = os.environ
+
+if "UNIFIED_MEMORY_SET" in env:
+    UNIFIED_MEMORY_SET=env["UNIFIED_MEMORY_SET"]
+
+if UNIFIED_MEMORY_SET == "yes":
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=2, allow_growth = True)
+else:
+    gpu_options = tf.GPUOptions()
+
+
+
+
+
+
 ## Required parameters
 flags.DEFINE_string(
     "data_dir", None,
@@ -856,13 +875,18 @@ def main(_):
 
   # If TPU is not available, this will fall back to normal Estimator on CPU
   # or GPU.
+
+  # add by jiaolin  
+  session_config = tf.ConfigProto(gpu_options=gpu_options)
+  estimator_config = tf.estimator.RunConfig(session_config=session_config)
+
   estimator = tf.contrib.tpu.TPUEstimator(
       use_tpu=FLAGS.use_tpu,
       model_fn=model_fn,
       config=run_config,
       train_batch_size=FLAGS.train_batch_size,
       eval_batch_size=FLAGS.eval_batch_size,
-      predict_batch_size=FLAGS.predict_batch_size)
+      predict_batch_size=FLAGS.predict_batch_size, config=estimator_config) # add by jiaolin
 
   if FLAGS.do_train:
     train_file = os.path.join(FLAGS.output_dir, "train.tf_record")
@@ -882,7 +906,7 @@ def main(_):
     #add by jiaolin
     hook = tf.train.ProfilerHook(
             save_steps=20,
-            output_dir="profiling_results",
+            output_dir="profiling_results_umem-%s"%UNIFIED_MEMORY_SET,
             show_dataflow=True,
             show_memory=True)
     
