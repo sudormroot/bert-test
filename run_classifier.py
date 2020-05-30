@@ -48,7 +48,7 @@ else:
 
 
 
-class MyMetadataHook(SessionRunHook):
+class MyMetadataHook(tf.estimator.SessionRunHook):
     def __init__(self, save_steps=None, save_secs=None, output_dir=""):
         self._output_tag = "blah-{}"
         self._output_dir = output_dir
