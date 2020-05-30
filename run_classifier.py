@@ -999,15 +999,15 @@ def main(_):
 
     print("output_dir=",output_dir)
 
-    """
+    
     hook = tf.train.ProfilerHook(
             save_steps=1,
             #steps_per_run=1,
             output_dir=output_dir,
             show_dataflow=True,
             show_memory=True)
+    
     """
-
     hook = MyMetadataHook(
             save_steps=1,
             #steps_per_run=1,
@@ -1015,7 +1015,7 @@ def main(_):
             #show_dataflow=True,
             #show_memory=True
             )
-    
+    """
 
     hooks = [hook]
 
