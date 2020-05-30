@@ -60,7 +60,7 @@ class MyMetadataHook(tf.estimator.SessionRunHook):
 
     def begin(self):
         self._next_step = None
-        self._global_step_tensor = training_util.get_global_step()
+        #self._global_step_tensor = training_util.get_global_step()
         #self._writer = tf.summary.FileWriter(self._output_dir,
         #                                       tf.get_default_graph())
  
