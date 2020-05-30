@@ -68,7 +68,7 @@ class MyMetadataHook(SessionRunHook):
         #      raise RuntimeError(
         #          "Global step should be created to use ProfilerHook.")
  
-     def before_run(self, run_context):
+    def before_run(self, run_context):
 
         if self._next_step != 11:
               return
@@ -80,7 +80,7 @@ class MyMetadataHook(SessionRunHook):
         opts = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
         return SessionRunArgs(requests, options=opts, run_metadata=self.run_metadata)
  
-     def after_run(self, run_context, run_values):
+    def after_run(self, run_context, run_values):
 
         if self._next_step != 11:
             global_step = self._atomic_counter + 1
@@ -129,7 +129,7 @@ class MyMetadataHook(SessionRunHook):
         #    self._writer.flush()
         self._next_step = global_step + 1
  
-     def end(self, session):
+    def end(self, session):
           #self._writer.close()
           return
 
