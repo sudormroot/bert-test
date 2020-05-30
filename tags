@@ -1,0 +1,334 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AdamWeightDecayOptimizer	optimization.py	/^class AdamWeightDecayOptimizer(tf.train.Optimizer):$/;"	c
+BasicTokenizer	tokenization.py	/^class BasicTokenizer(object):$/;"	c
+BertConfig	modeling.py	/^class BertConfig(object):$/;"	c
+BertModel	modeling.py	/^class BertModel(object):$/;"	c
+BertModelTest	modeling_test.py	/^class BertModelTest(tf.test.TestCase):$/;"	c
+BertModelTester	modeling_test.py	/^  class BertModelTester(object):$/;"	c	class:BertModelTest
+ColaProcessor	run_classifier.py	/^class ColaProcessor(DataProcessor):$/;"	c
+DataProcessor	run_classifier.py	/^class DataProcessor(object):$/;"	c
+FLAGS	create_pretraining_data.py	/^FLAGS = flags.FLAGS$/;"	v
+FLAGS	extract_features.py	/^FLAGS = flags.FLAGS$/;"	v
+FLAGS	run_classifier.py	/^FLAGS = flags.FLAGS$/;"	v
+FLAGS	run_classifier_with_tfhub.py	/^FLAGS = flags.FLAGS$/;"	v
+FLAGS	run_pretraining.py	/^FLAGS = flags.FLAGS$/;"	v
+FLAGS	run_squad.py	/^FLAGS = flags.FLAGS$/;"	v
+FeatureWriter	run_squad.py	/^class FeatureWriter(object):$/;"	c
+FullTokenizer	tokenization.py	/^class FullTokenizer(object):$/;"	c
+InputExample	extract_features.py	/^class InputExample(object):$/;"	c
+InputExample	run_classifier.py	/^class InputExample(object):$/;"	c
+InputFeatures	extract_features.py	/^class InputFeatures(object):$/;"	c
+InputFeatures	run_classifier.py	/^class InputFeatures(object):$/;"	c
+InputFeatures	run_squad.py	/^class InputFeatures(object):$/;"	c
+MaskedLmInstance	create_pretraining_data.py	/^MaskedLmInstance = collections.namedtuple("MaskedLmInstance",$/;"	v
+MnliProcessor	run_classifier.py	/^class MnliProcessor(DataProcessor):$/;"	c
+MrpcProcessor	run_classifier.py	/^class MrpcProcessor(DataProcessor):$/;"	c
+OptimizationTest	optimization_test.py	/^class OptimizationTest(tf.test.TestCase):$/;"	c
+PaddingInputExample	run_classifier.py	/^class PaddingInputExample(object):$/;"	c
+RawResult	run_squad.py	/^RawResult = collections.namedtuple("RawResult",$/;"	v
+SquadExample	run_squad.py	/^class SquadExample(object):$/;"	c
+TokenizationTest	tokenization_test.py	/^class TokenizationTest(tf.test.TestCase):$/;"	c
+TrainingInstance	create_pretraining_data.py	/^class TrainingInstance(object):$/;"	c
+WordpieceTokenizer	tokenization.py	/^class WordpieceTokenizer(object):$/;"	c
+XnliProcessor	run_classifier.py	/^class XnliProcessor(DataProcessor):$/;"	c
+__init__	create_pretraining_data.py	/^  def __init__(self, tokens, segment_ids, masked_lm_positions, masked_lm_labels,$/;"	m	class:TrainingInstance
+__init__	extract_features.py	/^  def __init__(self, unique_id, text_a, text_b):$/;"	m	class:InputExample
+__init__	extract_features.py	/^  def __init__(self, unique_id, tokens, input_ids, input_mask, input_type_ids):$/;"	m	class:InputFeatures
+__init__	modeling.py	/^  def __init__(self,$/;"	m	class:BertConfig
+__init__	modeling.py	/^  def __init__(self,$/;"	m	class:BertModel
+__init__	modeling_test.py	/^    def __init__(self,$/;"	m	class:BertModelTest.BertModelTester
+__init__	optimization.py	/^  def __init__(self,$/;"	m	class:AdamWeightDecayOptimizer
+__init__	run_classifier.py	/^  def __init__(self):$/;"	m	class:XnliProcessor
+__init__	run_classifier.py	/^  def __init__(self, guid, text_a, text_b=None, label=None):$/;"	m	class:InputExample
+__init__	run_classifier.py	/^  def __init__(self,$/;"	m	class:InputFeatures
+__init__	run_squad.py	/^  def __init__(self, filename, is_training):$/;"	m	class:FeatureWriter
+__init__	run_squad.py	/^  def __init__(self,$/;"	m	class:InputFeatures
+__init__	run_squad.py	/^  def __init__(self,$/;"	m	class:SquadExample
+__init__	tokenization.py	/^  def __init__(self, do_lower_case=True):$/;"	m	class:BasicTokenizer
+__init__	tokenization.py	/^  def __init__(self, vocab, unk_token="[UNK]", max_input_chars_per_word=200):$/;"	m	class:WordpieceTokenizer
+__init__	tokenization.py	/^  def __init__(self, vocab_file, do_lower_case=True):$/;"	m	class:FullTokenizer
+__repr__	create_pretraining_data.py	/^  def __repr__(self):$/;"	m	class:TrainingInstance	file:
+__repr__	run_squad.py	/^  def __repr__(self):$/;"	m	class:SquadExample	file:
+__str__	create_pretraining_data.py	/^  def __str__(self):$/;"	m	class:TrainingInstance	file:
+__str__	run_squad.py	/^  def __str__(self):$/;"	m	class:SquadExample	file:
+_check_is_max_context	run_squad.py	/^def _check_is_max_context(doc_spans, cur_span_index, position):$/;"	f
+_clean_text	tokenization.py	/^  def _clean_text(self, text):$/;"	m	class:BasicTokenizer
+_compute_softmax	run_squad.py	/^def _compute_softmax(scores):$/;"	f
+_create_examples	run_classifier.py	/^  def _create_examples(self, lines, set_type):$/;"	m	class:ColaProcessor
+_create_examples	run_classifier.py	/^  def _create_examples(self, lines, set_type):$/;"	m	class:MnliProcessor
+_create_examples	run_classifier.py	/^  def _create_examples(self, lines, set_type):$/;"	m	class:MrpcProcessor
+_decode_record	run_classifier.py	/^  def _decode_record(record, name_to_features):$/;"	f	function:file_based_input_fn_builder
+_decode_record	run_pretraining.py	/^def _decode_record(record, name_to_features):$/;"	f
+_decode_record	run_squad.py	/^  def _decode_record(record, name_to_features):$/;"	f	function:input_fn_builder
+_do_use_weight_decay	optimization.py	/^  def _do_use_weight_decay(self, param_name):$/;"	m	class:AdamWeightDecayOptimizer
+_get_best_indexes	run_squad.py	/^def _get_best_indexes(logits, n_best_size):$/;"	f
+_get_variable_name	optimization.py	/^  def _get_variable_name(self, param_name):$/;"	m	class:AdamWeightDecayOptimizer
+_improve_answer_span	run_squad.py	/^def _improve_answer_span(doc_tokens, input_start, input_end, tokenizer,$/;"	f
+_is_chinese_char	tokenization.py	/^  def _is_chinese_char(self, cp):$/;"	m	class:BasicTokenizer
+_is_control	tokenization.py	/^def _is_control(char):$/;"	f
+_is_punctuation	tokenization.py	/^def _is_punctuation(char):$/;"	f
+_is_whitespace	tokenization.py	/^def _is_whitespace(char):$/;"	f
+_read_tsv	run_classifier.py	/^  def _read_tsv(cls, input_file, quotechar=None):$/;"	m	class:DataProcessor
+_run_split_on_punc	tokenization.py	/^  def _run_split_on_punc(self, text):$/;"	m	class:BasicTokenizer
+_run_strip_accents	tokenization.py	/^  def _run_strip_accents(self, text):$/;"	m	class:BasicTokenizer
+_strip_spaces	run_squad.py	/^  def _strip_spaces(text):$/;"	f	function:get_final_text
+_tokenize_chinese_chars	tokenization.py	/^  def _tokenize_chinese_chars(self, text):$/;"	m	class:BasicTokenizer
+_truncate_seq_pair	extract_features.py	/^def _truncate_seq_pair(tokens_a, tokens_b, max_length):$/;"	f
+_truncate_seq_pair	run_classifier.py	/^def _truncate_seq_pair(tokens_a, tokens_b, max_length):$/;"	f
+absolute_import	create_pretraining_data.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	extract_features.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	modeling.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	modeling_test.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	optimization.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	optimization_test.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	run_classifier.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	run_classifier_with_tfhub.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	run_pretraining.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	run_squad.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	tokenization.py	/^from __future__ import absolute_import$/;"	i
+absolute_import	tokenization_test.py	/^from __future__ import absolute_import$/;"	i
+append_feature	run_squad.py	/^    def append_feature(feature):$/;"	f	function:main
+apply_gradients	optimization.py	/^  def apply_gradients(self, grads_and_vars, global_step=None, name=None):$/;"	m	class:AdamWeightDecayOptimizer
+assert_all_tensors_reachable	modeling_test.py	/^  def assert_all_tensors_reachable(self, sess, outputs):$/;"	m	class:BertModelTest
+assert_rank	modeling.py	/^def assert_rank(tensor, expected_rank, name=None):$/;"	f
+attention_layer	modeling.py	/^def attention_layer(from_tensor,$/;"	f
+check_output	modeling_test.py	/^    def check_output(self, result):$/;"	m	class:BertModelTest.BertModelTester
+close	run_squad.py	/^  def close(self):$/;"	m	class:FeatureWriter
+codecs	extract_features.py	/^import codecs$/;"	i
+collections	create_pretraining_data.py	/^import collections$/;"	i
+collections	extract_features.py	/^import collections$/;"	i
+collections	modeling.py	/^import collections$/;"	i
+collections	modeling_test.py	/^import collections$/;"	i
+collections	run_classifier.py	/^import collections$/;"	i
+collections	run_squad.py	/^import collections$/;"	i
+collections	tokenization.py	/^import collections$/;"	i
+compute_loss	run_squad.py	/^      def compute_loss(logits, positions):$/;"	f	function:model_fn_builder.model_fn
+convert_by_vocab	tokenization.py	/^def convert_by_vocab(vocab, items):$/;"	f
+convert_examples_to_features	extract_features.py	/^def convert_examples_to_features(examples, seq_length, tokenizer):$/;"	f
+convert_examples_to_features	run_classifier.py	/^def convert_examples_to_features(examples, label_list, max_seq_length,$/;"	f
+convert_examples_to_features	run_squad.py	/^def convert_examples_to_features(examples, tokenizer, max_seq_length,$/;"	f
+convert_ids_to_tokens	tokenization.py	/^  def convert_ids_to_tokens(self, ids):$/;"	m	class:FullTokenizer
+convert_ids_to_tokens	tokenization.py	/^def convert_ids_to_tokens(inv_vocab, ids):$/;"	f
+convert_single_example	run_classifier.py	/^def convert_single_example(ex_index, example, label_list, max_seq_length,$/;"	f
+convert_to_unicode	tokenization.py	/^def convert_to_unicode(text):$/;"	f
+convert_tokens_to_ids	tokenization.py	/^  def convert_tokens_to_ids(self, tokens):$/;"	m	class:FullTokenizer
+convert_tokens_to_ids	tokenization.py	/^def convert_tokens_to_ids(vocab, tokens):$/;"	f
+copy	modeling.py	/^import copy$/;"	i
+create_attention_mask_from_input_mask	modeling.py	/^def create_attention_mask_from_input_mask(from_tensor, to_mask):$/;"	f
+create_float_feature	create_pretraining_data.py	/^def create_float_feature(values):$/;"	f
+create_initializer	modeling.py	/^def create_initializer(initializer_range=0.02):$/;"	f
+create_instances_from_document	create_pretraining_data.py	/^def create_instances_from_document($/;"	f
+create_int_feature	create_pretraining_data.py	/^def create_int_feature(values):$/;"	f
+create_int_feature	run_classifier.py	/^    def create_int_feature(values):$/;"	f	function:file_based_convert_examples_to_features
+create_int_feature	run_squad.py	/^    def create_int_feature(values):$/;"	f	function:FeatureWriter.process_feature
+create_masked_lm_predictions	create_pretraining_data.py	/^def create_masked_lm_predictions(tokens, masked_lm_prob,$/;"	f
+create_model	modeling_test.py	/^    def create_model(self):$/;"	m	class:BertModelTest.BertModelTester
+create_model	run_classifier.py	/^def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,$/;"	f
+create_model	run_classifier_with_tfhub.py	/^def create_model(is_training, input_ids, input_mask, segment_ids, labels,$/;"	f
+create_model	run_squad.py	/^def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,$/;"	f
+create_optimizer	optimization.py	/^def create_optimizer(loss, init_lr, num_train_steps, num_warmup_steps, use_tpu):$/;"	f
+create_tokenizer_from_hub_module	run_classifier_with_tfhub.py	/^def create_tokenizer_from_hub_module(bert_hub_module_handle):$/;"	f
+create_training_instances	create_pretraining_data.py	/^def create_training_instances(input_files, tokenizer, max_seq_length,$/;"	f
+csv	run_classifier.py	/^import csv$/;"	i
+division	create_pretraining_data.py	/^from __future__ import division$/;"	i
+division	extract_features.py	/^from __future__ import division$/;"	i
+division	modeling.py	/^from __future__ import division$/;"	i
+division	modeling_test.py	/^from __future__ import division$/;"	i
+division	optimization.py	/^from __future__ import division$/;"	i
+division	optimization_test.py	/^from __future__ import division$/;"	i
+division	run_classifier.py	/^from __future__ import division$/;"	i
+division	run_classifier_with_tfhub.py	/^from __future__ import division$/;"	i
+division	run_pretraining.py	/^from __future__ import division$/;"	i
+division	run_squad.py	/^from __future__ import division$/;"	i
+division	tokenization.py	/^from __future__ import division$/;"	i
+division	tokenization_test.py	/^from __future__ import division$/;"	i
+dropout	modeling.py	/^def dropout(input_tensor, dropout_prob):$/;"	f
+embedding_lookup	modeling.py	/^def embedding_lookup(input_ids,$/;"	f
+embedding_postprocessor	modeling.py	/^def embedding_postprocessor(input_tensor,$/;"	f
+file_based_convert_examples_to_features	run_classifier.py	/^def file_based_convert_examples_to_features($/;"	f
+file_based_input_fn_builder	run_classifier.py	/^def file_based_input_fn_builder(input_file, seq_length, is_training,$/;"	f
+flags	create_pretraining_data.py	/^flags = tf.flags$/;"	v
+flags	extract_features.py	/^flags = tf.flags$/;"	v
+flags	run_classifier.py	/^flags = tf.flags$/;"	v
+flags	run_classifier_with_tfhub.py	/^flags = tf.flags$/;"	v
+flags	run_pretraining.py	/^flags = tf.flags$/;"	v
+flags	run_squad.py	/^flags = tf.flags$/;"	v
+flatten_recursive	modeling_test.py	/^  def flatten_recursive(cls, item):$/;"	m	class:BertModelTest
+from_dict	modeling.py	/^  def from_dict(cls, json_object):$/;"	m	class:BertConfig
+from_json_file	modeling.py	/^  def from_json_file(cls, json_file):$/;"	m	class:BertConfig
+gather_indexes	run_pretraining.py	/^def gather_indexes(sequence_tensor, positions):$/;"	f
+gelu	modeling.py	/^def gelu(x):$/;"	f
+get_activation	modeling.py	/^def get_activation(activation_string):$/;"	f
+get_all_encoder_layers	modeling.py	/^  def get_all_encoder_layers(self):$/;"	m	class:BertModel
+get_assignment_map_from_checkpoint	modeling.py	/^def get_assignment_map_from_checkpoint(tvars, init_checkpoint):$/;"	f
+get_dev_examples	run_classifier.py	/^  def get_dev_examples(self, data_dir):$/;"	m	class:ColaProcessor
+get_dev_examples	run_classifier.py	/^  def get_dev_examples(self, data_dir):$/;"	m	class:DataProcessor
+get_dev_examples	run_classifier.py	/^  def get_dev_examples(self, data_dir):$/;"	m	class:MnliProcessor
+get_dev_examples	run_classifier.py	/^  def get_dev_examples(self, data_dir):$/;"	m	class:MrpcProcessor
+get_dev_examples	run_classifier.py	/^  def get_dev_examples(self, data_dir):$/;"	m	class:XnliProcessor
+get_embedding_output	modeling.py	/^  def get_embedding_output(self):$/;"	m	class:BertModel
+get_embedding_table	modeling.py	/^  def get_embedding_table(self):$/;"	m	class:BertModel
+get_final_text	run_squad.py	/^def get_final_text(pred_text, orig_text, do_lower_case):$/;"	f
+get_labels	run_classifier.py	/^  def get_labels(self):$/;"	m	class:ColaProcessor
+get_labels	run_classifier.py	/^  def get_labels(self):$/;"	m	class:DataProcessor
+get_labels	run_classifier.py	/^  def get_labels(self):$/;"	m	class:MnliProcessor
+get_labels	run_classifier.py	/^  def get_labels(self):$/;"	m	class:MrpcProcessor
+get_labels	run_classifier.py	/^  def get_labels(self):$/;"	m	class:XnliProcessor
+get_masked_lm_output	run_pretraining.py	/^def get_masked_lm_output(bert_config, input_tensor, output_weights, positions,$/;"	f
+get_next_sentence_output	run_pretraining.py	/^def get_next_sentence_output(bert_config, input_tensor, labels):$/;"	f
+get_pooled_output	modeling.py	/^  def get_pooled_output(self):$/;"	m	class:BertModel
+get_sequence_output	modeling.py	/^  def get_sequence_output(self):$/;"	m	class:BertModel
+get_shape_list	modeling.py	/^def get_shape_list(tensor, expected_rank=None, name=None):$/;"	f
+get_test_examples	run_classifier.py	/^  def get_test_examples(self, data_dir):$/;"	m	class:ColaProcessor
+get_test_examples	run_classifier.py	/^  def get_test_examples(self, data_dir):$/;"	m	class:DataProcessor
+get_test_examples	run_classifier.py	/^  def get_test_examples(self, data_dir):$/;"	m	class:MnliProcessor
+get_test_examples	run_classifier.py	/^  def get_test_examples(self, data_dir):$/;"	m	class:MrpcProcessor
+get_train_examples	run_classifier.py	/^  def get_train_examples(self, data_dir):$/;"	m	class:ColaProcessor
+get_train_examples	run_classifier.py	/^  def get_train_examples(self, data_dir):$/;"	m	class:DataProcessor
+get_train_examples	run_classifier.py	/^  def get_train_examples(self, data_dir):$/;"	m	class:MnliProcessor
+get_train_examples	run_classifier.py	/^  def get_train_examples(self, data_dir):$/;"	m	class:MrpcProcessor
+get_train_examples	run_classifier.py	/^  def get_train_examples(self, data_dir):$/;"	m	class:XnliProcessor
+get_unreachable_ops	modeling_test.py	/^  def get_unreachable_ops(cls, graph, outputs):$/;"	m	class:BertModelTest
+hub	run_classifier_with_tfhub.py	/^import tensorflow_hub as hub$/;"	i
+ids_tensor	modeling_test.py	/^  def ids_tensor(cls, shape, vocab_size, rng=None, name=None):$/;"	m	class:BertModelTest
+input_fn	extract_features.py	/^  def input_fn(params):$/;"	f	function:input_fn_builder
+input_fn	run_classifier.py	/^  def input_fn(params):$/;"	f	function:file_based_input_fn_builder
+input_fn	run_classifier.py	/^  def input_fn(params):$/;"	f	function:input_fn_builder
+input_fn	run_pretraining.py	/^  def input_fn(params):$/;"	f	function:input_fn_builder
+input_fn	run_squad.py	/^  def input_fn(params):$/;"	f	function:input_fn_builder
+input_fn_builder	extract_features.py	/^def input_fn_builder(features, seq_length):$/;"	f
+input_fn_builder	run_classifier.py	/^def input_fn_builder(features, seq_length, is_training, drop_remainder):$/;"	f
+input_fn_builder	run_pretraining.py	/^def input_fn_builder(input_files,$/;"	f
+input_fn_builder	run_squad.py	/^def input_fn_builder(input_file, seq_length, is_training, drop_remainder):$/;"	f
+is_whitespace	run_squad.py	/^  def is_whitespace(c):$/;"	f	function:read_squad_examples
+json	extract_features.py	/^import json$/;"	i
+json	modeling.py	/^import json$/;"	i
+json	modeling_test.py	/^import json$/;"	i
+json	run_squad.py	/^import json$/;"	i
+layer_norm	modeling.py	/^def layer_norm(input_tensor, name=None):$/;"	f
+layer_norm_and_dropout	modeling.py	/^def layer_norm_and_dropout(input_tensor, dropout_prob, name=None):$/;"	f
+load_vocab	tokenization.py	/^def load_vocab(vocab_file):$/;"	f
+main	create_pretraining_data.py	/^def main(_):$/;"	f
+main	extract_features.py	/^def main(_):$/;"	f
+main	run_classifier.py	/^def main(_):$/;"	f
+main	run_classifier_with_tfhub.py	/^def main(_):$/;"	f
+main	run_pretraining.py	/^def main(_):$/;"	f
+main	run_squad.py	/^def main(_):$/;"	f
+math	modeling.py	/^import math$/;"	i
+math	run_squad.py	/^import math$/;"	i
+metric_fn	run_classifier.py	/^      def metric_fn(per_example_loss, label_ids, logits, is_real_example):$/;"	f	function:model_fn_builder.model_fn
+metric_fn	run_classifier_with_tfhub.py	/^      def metric_fn(per_example_loss, label_ids, logits):$/;"	f	function:model_fn_builder.model_fn
+metric_fn	run_pretraining.py	/^      def metric_fn(masked_lm_example_loss, masked_lm_log_probs, masked_lm_ids,$/;"	f	function:model_fn_builder.model_fn
+model_fn	extract_features.py	/^  def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument$/;"	f	function:model_fn_builder
+model_fn	run_classifier.py	/^  def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument$/;"	f	function:model_fn_builder
+model_fn	run_classifier_with_tfhub.py	/^  def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument$/;"	f	function:model_fn_builder
+model_fn	run_pretraining.py	/^  def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument$/;"	f	function:model_fn_builder
+model_fn	run_squad.py	/^  def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument$/;"	f	function:model_fn_builder
+model_fn_builder	extract_features.py	/^def model_fn_builder(bert_config, init_checkpoint, layer_indexes, use_tpu,$/;"	f
+model_fn_builder	run_classifier.py	/^def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,$/;"	f
+model_fn_builder	run_classifier_with_tfhub.py	/^def model_fn_builder(num_labels, learning_rate, num_train_steps,$/;"	f
+model_fn_builder	run_pretraining.py	/^def model_fn_builder(bert_config, init_checkpoint, learning_rate,$/;"	f
+model_fn_builder	run_squad.py	/^def model_fn_builder(bert_config, init_checkpoint, learning_rate,$/;"	f
+modeling	extract_features.py	/^import modeling$/;"	i
+modeling	modeling_test.py	/^import modeling$/;"	i
+modeling	run_classifier.py	/^import modeling$/;"	i
+modeling	run_pretraining.py	/^import modeling$/;"	i
+modeling	run_squad.py	/^import modeling$/;"	i
+np	modeling.py	/^import numpy as np$/;"	i
+optimization	optimization_test.py	/^import optimization$/;"	i
+optimization	run_classifier.py	/^import optimization$/;"	i
+optimization	run_classifier_with_tfhub.py	/^import optimization$/;"	i
+optimization	run_pretraining.py	/^import optimization$/;"	i
+optimization	run_squad.py	/^import optimization$/;"	i
+os	run_classifier.py	/^import os$/;"	i
+os	run_classifier_with_tfhub.py	/^import os$/;"	i
+os	run_pretraining.py	/^import os$/;"	i
+os	run_squad.py	/^import os$/;"	i
+os	tokenization_test.py	/^import os$/;"	i
+print_function	create_pretraining_data.py	/^from __future__ import print_function$/;"	i
+print_function	extract_features.py	/^from __future__ import print_function$/;"	i
+print_function	modeling.py	/^from __future__ import print_function$/;"	i
+print_function	modeling_test.py	/^from __future__ import print_function$/;"	i
+print_function	optimization.py	/^from __future__ import print_function$/;"	i
+print_function	optimization_test.py	/^from __future__ import print_function$/;"	i
+print_function	run_classifier.py	/^from __future__ import print_function$/;"	i
+print_function	run_classifier_with_tfhub.py	/^from __future__ import print_function$/;"	i
+print_function	run_pretraining.py	/^from __future__ import print_function$/;"	i
+print_function	run_squad.py	/^from __future__ import print_function$/;"	i
+print_function	tokenization.py	/^from __future__ import print_function$/;"	i
+print_function	tokenization_test.py	/^from __future__ import print_function$/;"	i
+printable_text	tokenization.py	/^def printable_text(text):$/;"	f
+process_feature	run_squad.py	/^  def process_feature(self, feature):$/;"	m	class:FeatureWriter
+random	create_pretraining_data.py	/^import random$/;"	i
+random	modeling_test.py	/^import random$/;"	i
+random	run_squad.py	/^import random$/;"	i
+re	extract_features.py	/^import re$/;"	i
+re	modeling.py	/^import re$/;"	i
+re	modeling_test.py	/^import re$/;"	i
+re	optimization.py	/^import re$/;"	i
+re	tokenization.py	/^import re$/;"	i
+read_examples	extract_features.py	/^def read_examples(input_file):$/;"	f
+read_squad_examples	run_squad.py	/^def read_squad_examples(input_file, is_training):$/;"	f
+reshape_from_matrix	modeling.py	/^def reshape_from_matrix(output_tensor, orig_shape_list):$/;"	f
+reshape_to_matrix	modeling.py	/^def reshape_to_matrix(input_tensor):$/;"	f
+run_classifier	run_classifier_with_tfhub.py	/^import run_classifier$/;"	i
+run_tester	modeling_test.py	/^  def run_tester(self, tester):$/;"	m	class:BertModelTest
+six	modeling.py	/^import six$/;"	i
+six	modeling_test.py	/^import six$/;"	i
+six	run_squad.py	/^import six$/;"	i
+six	tokenization.py	/^import six$/;"	i
+six	tokenization_test.py	/^import six$/;"	i
+tempfile	tokenization_test.py	/^import tempfile$/;"	i
+test_adam	optimization_test.py	/^  def test_adam(self):$/;"	m	class:OptimizationTest
+test_basic_tokenizer_lower	tokenization_test.py	/^  def test_basic_tokenizer_lower(self):$/;"	m	class:TokenizationTest
+test_basic_tokenizer_no_lower	tokenization_test.py	/^  def test_basic_tokenizer_no_lower(self):$/;"	m	class:TokenizationTest
+test_chinese	tokenization_test.py	/^  def test_chinese(self):$/;"	m	class:TokenizationTest
+test_config_to_json_string	modeling_test.py	/^  def test_config_to_json_string(self):$/;"	m	class:BertModelTest
+test_convert_tokens_to_ids	tokenization_test.py	/^  def test_convert_tokens_to_ids(self):$/;"	m	class:TokenizationTest
+test_default	modeling_test.py	/^  def test_default(self):$/;"	m	class:BertModelTest
+test_full_tokenizer	tokenization_test.py	/^  def test_full_tokenizer(self):$/;"	m	class:TokenizationTest
+test_is_control	tokenization_test.py	/^  def test_is_control(self):$/;"	m	class:TokenizationTest
+test_is_punctuation	tokenization_test.py	/^  def test_is_punctuation(self):$/;"	m	class:TokenizationTest
+test_is_whitespace	tokenization_test.py	/^  def test_is_whitespace(self):$/;"	m	class:TokenizationTest
+test_wordpiece_tokenizer	tokenization_test.py	/^  def test_wordpiece_tokenizer(self):$/;"	m	class:TokenizationTest
+tf	create_pretraining_data.py	/^import tensorflow as tf$/;"	i
+tf	extract_features.py	/^import tensorflow as tf$/;"	i
+tf	modeling.py	/^import tensorflow as tf$/;"	i
+tf	modeling_test.py	/^import tensorflow as tf$/;"	i
+tf	optimization.py	/^import tensorflow as tf$/;"	i
+tf	optimization_test.py	/^import tensorflow as tf$/;"	i
+tf	run_classifier.py	/^import tensorflow as tf$/;"	i
+tf	run_classifier_with_tfhub.py	/^import tensorflow as tf$/;"	i
+tf	run_pretraining.py	/^import tensorflow as tf$/;"	i
+tf	run_squad.py	/^import tensorflow as tf$/;"	i
+tf	tokenization.py	/^import tensorflow as tf$/;"	i
+tf	tokenization_test.py	/^import tensorflow as tf$/;"	i
+to_dict	modeling.py	/^  def to_dict(self):$/;"	m	class:BertConfig
+to_json_string	modeling.py	/^  def to_json_string(self):$/;"	m	class:BertConfig
+tokenization	create_pretraining_data.py	/^import tokenization$/;"	i
+tokenization	extract_features.py	/^import tokenization$/;"	i
+tokenization	run_classifier.py	/^import tokenization$/;"	i
+tokenization	run_classifier_with_tfhub.py	/^import tokenization$/;"	i
+tokenization	run_squad.py	/^import tokenization$/;"	i
+tokenization	tokenization_test.py	/^import tokenization$/;"	i
+tokenize	tokenization.py	/^  def tokenize(self, text):$/;"	m	class:BasicTokenizer
+tokenize	tokenization.py	/^  def tokenize(self, text):$/;"	m	class:FullTokenizer
+tokenize	tokenization.py	/^  def tokenize(self, text):$/;"	m	class:WordpieceTokenizer
+tpu_scaffold	extract_features.py	/^      def tpu_scaffold():$/;"	f	function:model_fn_builder.model_fn
+tpu_scaffold	run_classifier.py	/^        def tpu_scaffold():$/;"	f	function:model_fn_builder.model_fn
+tpu_scaffold	run_pretraining.py	/^        def tpu_scaffold():$/;"	f	function:model_fn_builder.model_fn
+tpu_scaffold	run_squad.py	/^        def tpu_scaffold():$/;"	f	function:model_fn_builder.model_fn
+transformer_model	modeling.py	/^def transformer_model(input_tensor,$/;"	f
+transpose_for_scores	modeling.py	/^  def transpose_for_scores(input_tensor, batch_size, num_attention_heads,$/;"	f	function:attention_layer
+truncate_seq_pair	create_pretraining_data.py	/^def truncate_seq_pair(tokens_a, tokens_b, max_num_tokens, rng):$/;"	f
+unicodedata	tokenization.py	/^import unicodedata$/;"	i
+validate_case_matches_checkpoint	tokenization.py	/^def validate_case_matches_checkpoint(do_lower_case, init_checkpoint):$/;"	f
+validate_flags_or_throw	run_squad.py	/^def validate_flags_or_throw(bert_config):$/;"	f
+whitespace_tokenize	tokenization.py	/^def whitespace_tokenize(text):$/;"	f
+write_instance_to_example_files	create_pretraining_data.py	/^def write_instance_to_example_files(instances, tokenizer, max_seq_length,$/;"	f
+write_predictions	run_squad.py	/^def write_predictions(all_examples, all_features, all_results, n_best_size,$/;"	f

@@ -877,7 +877,19 @@ def main(_):
         seq_length=FLAGS.max_seq_length,
         is_training=True,
         drop_remainder=True)
-    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+
+    #do profiling
+    #add by jiaolin
+    hook = tf.train.ProfilerHook(
+            save_steps=20,
+            output_dir="profiling_results",
+            show_dataflow=True,
+            show_memory=True)
+    
+    hooks = [hook]
+
+    
+    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps, hooks=hooks)
 
   if FLAGS.do_eval:
     eval_examples = processor.get_dev_examples(FLAGS.data_dir)
