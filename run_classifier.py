@@ -904,9 +904,14 @@ def main(_):
 
     #do profiling
     #add by jiaolin
+
+    output_dir="profiling_results_batchsize-%d_umem-%s"%(FLAGS.eval_batch_size, UNIFIED_MEMORY_SET)
+
+    print("output_dir=",output_dir)
+
     hook = tf.train.ProfilerHook(
             save_steps=20,
-            output_dir="profiling_results_umem-%s"%UNIFIED_MEMORY_SET,
+            output_dir=output_dir,
             show_dataflow=True,
             show_memory=True)
     
